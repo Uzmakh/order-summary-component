@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+:root{
+    /* ### Primary */
+     --pale-blue: hsl(225, 100%, 94%);
+     --bright-blue: hsl(245, 75%, 52%);
+    
+    /* ### Neutral */
+    
+     --very-pale-blue: hsl(225, 100%, 98%);
+     --desaturated-blue: hsl(224, 23%, 55%);
+     --dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    background-image: url(images/backgroung-desktop-variant.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--pale-blue
+    );
+    font-family: 'Red Hat Display', sans-serif;
+    /* font-size: 16px; */
+}
+.card{
+    width: 450px;
+    background-color: white;
+    color: var(--desaturated-blue);
+    margin: 50px auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.hero-image{
+    width: 100%;
+}
+.container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    font-size: 18px;
+}
+.container > *{
+    margin: 15px 0;
+}    /*.container > * means all immediate children of container class*/
+/* They are h2,p, .plan-container and the two buttons */
+.title{
+    color: var(--dark-blue);
+    text-align: center;
+    padding: 10px;
+    font-size: 32px;
+    font-weight: 700;
+
+}
+.order-description{
+    padding:0; 
+    margin: 20px;
+    line-height: 25px;
+
+}
+
+
+/* plan-container */
+.plan-container{
+    background-color: var(--very-pale-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    padding: 20px;
+    
+}
+.plan-description{
+    line-height: 25px;
+    margin-right:130px;
+}
+.plan-container strong{
+    color: var(--dark-blue);
+}
+.plan-container a{
+    color: var(--bright-blue);
+    font-weight: 700;
+    font-size: 13px;
+}
+.plan-container a:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+/* buttons */
+button{
+    width: 100%;
+    border: none;
+    padding: 1rem 0;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.proceed-button{
+background-color: var(--bright-blue);
+color: white;
+box-shadow: 0 20px 30px -8px rgb(102, 83, 225);
+}
+.cancel-button{
+background-color: white;
+color: var(--desaturated-blue);
+margin-top: 5px;
+}
+.proceed-button:hover{
+  opacity: 0.8;
+}
+.cancel-button:hover{
+color: black;
+}
